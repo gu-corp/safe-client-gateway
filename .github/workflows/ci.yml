@@ -118,7 +118,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
       - uses: docker/build-push-action@v5
         env:
-          DOCKER_IMAGE_TAG: safeglobal/safe-client-gateway-nest:staging
+          DOCKER_IMAGE_TAG: gulabs/safe-client-gateway-nest:staging
         with:
           platforms: linux/amd64,linux/arm64
           push: true
@@ -136,7 +136,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       IMAGE_CACHE_SOURCE: staging
-      IMAGE_REGISTRY: safeglobal
+      IMAGE_REGISTRY: gulabs
       IMAGE_NAME: safe-client-gateway-nest
     steps:
       - uses: actions/checkout@v4
