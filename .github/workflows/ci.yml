@@ -7,7 +7,7 @@ on:
     types: [released]
 
 env:
-  DOCKER_IMAGE_REGISTRY: safeglobal
+  DOCKER_IMAGE_REGISTRY: gulabs
   DOCKER_IMAGE_NAME: safe-client-gateway-nest
   DOCKER_BUILD_IMAGE_TAG: buildcache
 
